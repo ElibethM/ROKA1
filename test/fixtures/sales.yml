@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  client_id: 1
+  fechaVenta: 2014-06-13 15:34:18
+
+two:
+  client_id: 1
+  fechaVenta: 2014-06-13 15:34:18
