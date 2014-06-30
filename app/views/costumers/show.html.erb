@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @costumer.nombre %>
+</p>
+
+<p>
+  <strong>Telefono:</strong>
+  <%= @costumer.telefono %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @costumer.email %>
+</p>
+
+<p>
+  <strong>Direccion:</strong>
+  <%= @costumer.direccion %>
+</p>
+
+<p>
+  <strong>Rfc:</strong>
+  <%= @costumer.rfc %>
+</p>
+
+<p>
+  <strong>Facebook:</strong>
+  <%= @costumer.facebook %>
+</p>
+
+<p>
+  <strong>Linkedln:</strong>
+  <%= @costumer.linkedln %>
+</p>
+
+<%= link_to 'Editar', edit_costumer_path(@costumer) %> |
+<%= link_to 'Regresar', costumers_path %>

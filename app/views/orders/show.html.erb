@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @order.employee_id %>
+</p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @order.client_id %>
+</p>
+
+<p>
+  <strong>Fechapedido:</strong>
+  <%= @order.fechaPedido %>
+</p>
+
+<p>
+  <strong>Fechaparaentregar:</strong>
+  <%= @order.fechaParaEntregar %>
+</p>
+
+<%= link_to 'Edit', edit_order_path(@order) %> |
+<%= link_to 'Back', orders_path %>

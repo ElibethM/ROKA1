@@ -1,0 +1,42 @@
+<h1>Listas de Clientes</h1>
+<form class="form-search">
+  <div class="input-append">
+  <input type="text" id="busqueda" name="busqueda" placeholder= "Buscar por nombre"> 
+  <button type="submit">Buscar</button>
+       </div>
+</form>  
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Telefono</th>
+      <th>Email</th>
+      <th>Direccion</th>
+      <th>Rfc</th>
+      <th>Facebook</th>
+      <th>Linkedln</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @costumers.each do |costumer| %>
+      <tr>
+        <td><%= costumer.nombre %></td>
+        <td><%= costumer.telefono %></td>
+        <td><%= costumer.email %></td>
+        <td><%= costumer.direccion %></td>
+        <td><%= costumer.rfc %></td>
+        <td><%= costumer.facebook %></td>
+        <td><%= costumer.linkedln %></td>
+        <td><%= link_to 'Mostrar', costumer %></td>
+        <td><%= link_to 'Editar', edit_costumer_path(costumer) %></td>
+        <td><%= link_to 'Elminar', costumer, method: :delete, data: { confirm: '¿Seguro que quieres eliminar?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Crear nuevo Cliente', new_costumer_path %>
